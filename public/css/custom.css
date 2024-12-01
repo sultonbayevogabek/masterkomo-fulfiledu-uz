@@ -37,42 +37,27 @@
 body {
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-image: url("../img/main-bg.jpg");
+  background-color: #E7D9DB;
+
   font-family: "SF-Pro", sans-serif;
 }
 
 .bg-telegram {
   background-position: top right;
   background-attachment: fixed;
+  background-size: contain;
+  background-color: #E7D9DB;
   background-image: url("../img/telegram-bg.jpg");
 }
 
 
 .border-linear {
-  border: 1px solid transparent;
-  border-image: linear-gradient(0, #E9DADE, #F10657) 1;
-  border-radius: 18px;
-}
-
-.gradient-border {
-  position: relative;
-  padding: 20px;
-  background-color: white;
-  border-radius: 18px;
-}
-
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background: linear-gradient(0, #E9DADE, #F10657);
-  border-radius: 18px;
-  z-index: -1;
+  background-image: url("../img/rectangle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .highlight-red {
@@ -111,10 +96,10 @@ body {
     background-attachment: fixed;
   }
   body {
-    background-image: url("../img/mobile-bg.png");
+    background-image: url("../img/mobile-bg@2x.png");
   }
   .bg-telegram {
-    background-image: url("../img/mobile-telegram-bg.png");
+    background-image: url("../img/mobile-telegram-bg@2x.png");
 
   }
 }
@@ -131,7 +116,11 @@ body {
     }
     .bg-telegram {
       background-image: url("../img/mobile-telegram-bg@2x.png");
+    }
 
+    .border-linear {
+      background-image: url("../img/rectangle@2x.png");
+      background-repeat: no-repeat;
     }
   }
 }

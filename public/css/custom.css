@@ -39,25 +39,30 @@ body {
   background-position: top right;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../img/bg_main@1x.jpg");
+  background-image: url("../img/main-bg.jpg");
   font-family: "SF-Pro", sans-serif;
-  color: #ffffff;
 }
 
 .bg-telegram {
   background-position: top right;
   background-attachment: fixed;
-  background-image: url("../img/bg_telegram@1x.jpg");
+  background-image: url("../img/telegram-bg.jpg");
+}
+
+.highlight-red {
+  color: #990C3D;
 }
 
 .gradient-button {
-  background: linear-gradient(#D43333, #FF0000);
+  background: #F10657;
 }
 
 .teacher-label {
-  background: radial-gradient(61.3% 66.78% at 50% 104.95%, rgba(255, 211, 162, 0.2) 0%, rgba(254, 255, 211, 0.01) 100%),
-  linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  background: #E7D9DB;
+}
+
+.bg-whitish {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .telegram-radial {
@@ -66,11 +71,10 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body {
-    background-image: url("../img/bg_main@2x.jpg");
+    background-image: url("../img/main-bg@2x.jpg");
   }
-
   .bg-telegram {
-    background-image: url("../img/bg_telegram@2x.jpg");
+    background-image: url("../img/telegram-bg@2x.jpg");
   }
 }
 

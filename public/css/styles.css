@@ -66,11 +66,29 @@ body {
 }
 
 .border-linear {
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid transparent;
   -o-border-image: linear-gradient(0, #E9DADE, #F10657) 1;
      border-image: linear-gradient(0, #E9DADE, #F10657) 1;
   border-radius: 18px;
+}
+
+.gradient-border {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(0, #E9DADE, #F10657);
+  border-radius: 18px;
+  z-index: -1;
 }
 
 .highlight-red {
@@ -865,6 +883,18 @@ video {
   margin-top: -50px;
 }
 
+.mb-\[16px\] {
+  margin-bottom: 16px;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -935,6 +965,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .max-w-\[40\%\] {
@@ -1025,6 +1059,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -1228,6 +1266,11 @@ video {
   padding-bottom: 12px;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-\[5\%\] {
   padding-bottom: 5%;
 }
@@ -1279,6 +1322,10 @@ video {
 
 .text-\[42px\] {
   font-size: 42px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .font-bold {
@@ -1393,6 +1440,10 @@ video {
 
   .lg\:mr-6 {
     margin-right: 1.5rem;
+  }
+
+  .lg\:mb-\[24px\] {
+    margin-bottom: 24px;
   }
 
   .lg\:block {
@@ -1599,6 +1650,10 @@ video {
 
   .xl\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .xl\:text-\[80px\] {
+    font-size: 80px;
   }
 
   .xl\:text-\[90px\] {

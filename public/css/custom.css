@@ -51,11 +51,28 @@ body {
 
 
 .border-linear {
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid transparent;
   border-image: linear-gradient(0, #E9DADE, #F10657) 1;
   border-radius: 18px;
+}
 
+.gradient-border {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(0, #E9DADE, #F10657);
+  border-radius: 18px;
+  z-index: -1;
 }
 
 .highlight-red {

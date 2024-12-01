@@ -10,7 +10,7 @@
 </head>
 <body class="bg-telegram">
 <div class="h-screen flex flex-col">
-  <header>
+  <header class="hidden lg:block">
     <div class="container px-3 mx-auto grid grid-cols-11">
       <div class="col-span-11 lg:col-span-5 grid grid-cols-2 gap-2 lg:gap-4 xl:gap-6">
         <div
@@ -28,13 +28,14 @@
   </header>
   <main class="grow flex items-center">
     <div class="container mx-auto grid grid-cols-11">
-      <div class="col-span-11 lg:col-span-5 flex flex-col gap-10 py-10">
+      <div class="col-span-11 lg:col-span-5 flex flex-col gap-6 lg:gap-10 py-10">
         <h1
-          class="text-center text-[32px] lg:text-[60px] xl:text-[90px] leading-[1.2] uppercase font-bebas px-3">
+          class="text-center text-[42px] lg:text-[60px] xl:text-[90px] leading-[1.2] uppercase font-bebas px-12">
           To’xtang! Oxirgi <span class="highlight-red">qadam qoldi!</span>
         </h1>
-        <p class="text-[20px] lg:text-[22px] xl:text-[28px] font-medium text-center">Quyidagi OBUNA BO’LISH tugmasini bosib, bepul
-          dars bo’ladigan yopiq telegram kanalimga qo’shilib oling!</p>
+        <p class="px-2 lg:px-0 text-[20px] lg:text-[22px] xl:text-[28px] font-medium text-center">
+          Quyidagi OBUNA BO’LISH tugmasini bosib, <span class="font-bold">master klass</span> bo’ladigan yopiq telegram kanalimga qo’shilib oling!
+        </p>
 
         <svg class="animate-bounce mx-auto w-[150px] lg:w-[210px]" viewBox="0 0 218 103" fill="none"
              xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +59,8 @@
         <div class="flex flex-col items-center gap-3 lg:gap-4 xl:gap-5 px-3 lg:px-0 mt-[-12px] md:mt-0 relative z-10">
           <button
             id="joinToChannel"
-            class=" flex justify-center items-center  gradient-button rounded-full w-full lg:w-[550px] text-white h-[80px] lg:h-[80px] xl:h-[90px] font-bebas text-[22px] lg:text-[25px] xl:text-[30px] uppercase">
-            <img class="w-12 mr-6"
+            class=" flex justify-center items-center  gradient-button rounded-full w-full lg:w-[550px] text-white h-[80px] lg:h-[80px] xl:h-[90px] font-bebas text-[24px] lg:text-[25px] xl:text-[30px] uppercase">
+            <img class="w-10 lg:w-12 mr-4 lg:mr-6"
                  src="img/telegram-logo.svg"
                  alt="">
             <span>
@@ -68,24 +69,13 @@
           </button>
         </div>
       </div>
-<!--      <div class="col-span-6 hidden lg:flex items-end justify-end pb-[5%]">-->
-<!--        <div-->
-<!--          class="rounded-[18px] shadow-custom border border-white border-opacity-50 py-3.5 px-8 rotate-[-3.65deg] teacher-label">-->
-<!--          <div class="font-bebas uppercase text-[32px] lg:text-[40px] highlight-red">Kamola Baxtiyarovna</div>-->
-<!--          <div class="text-[16px] lg:text-[24px] leading-[1.2]">Dizayner-texnolog</div>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
   </main>
 
   <div class="block lg:hidden relative">
-    <img class="w-full mt-[-120px]" srcset="img/mentor_tg@1x.png 1x, img/mentor_tg@2x.png 2x" src="img/mentor_tg@1x.png"
+    <img class="w-full mt-[-120px]" srcset="img/mentor-telegram-mobile.png 1x, img/mentor-telegram-mobile.png 2x" src="img/mentor-telegram-mobile@2x.png"
          alt="whatever">
-<!--    <div-->
-<!--      class="absolute left-[30%] top-[50%] rounded-[18px] shadow-custom py-2.5 px-3.5 rotate-[-3.65deg] border border-white border-opacity-50 teacher-label">-->
-<!--      <div class="font-bebas uppercase text-[32px] lg:text-[40px] highlight-red">Kamola Baxtiyarovna</div>-->
-<!--      <div class="text-[16px] lg:text-[24px] leading-[1.2]">Dizayner-texnolog</div>-->
-<!--      </div>-->
+
     </div>
   </div>
 </div>

@@ -49,6 +49,15 @@ body {
   background-image: url("../img/telegram-bg.jpg");
 }
 
+
+.border-linear {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(0, #E9DADE, #F10657) 1;
+  border-radius: 18px;
+
+}
+
 .highlight-red {
   color: #990C3D;
 }
@@ -80,20 +89,32 @@ body {
 
 @media only screen and (max-width: 1024px) {
   body, .bg-telegram {
-    background-position: bottom center;
+    background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../img/bg_mobile@1x.jpg");
+  }
+  body {
+    background-image: url("../img/mobile-bg.png");
+  }
+  .bg-telegram {
+    background-image: url("../img/mobile-telegram-bg.png");
+
   }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   @media only screen and (max-width: 1024px) {
     body, .bg-telegram {
-      background-position: bottom center;
+      background-position: top center;
       background-size: cover;
       background-attachment: fixed;
-      background-image: url("../img/bg_mobile@2x.jpg");
+    }
+    body {
+      background-image: url("../img/mobile-bg@2x.png");
+    }
+    .bg-telegram {
+      background-image: url("../img/mobile-telegram-bg@2x.png");
+
     }
   }
 }

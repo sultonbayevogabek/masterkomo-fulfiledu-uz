@@ -3,7 +3,7 @@
 let user = JSON.parse(localStorage.getItem('user'));
 
 document.querySelector('#joinToChannel')?.addEventListener('click', () => {
-  window.location.href = 'https://t.me/+rtiNW0-Bvng2NDky';
+  window.location.href = 'https://t.me/+9G5Hv4qZ5EdjZTUy';
 })
 
 if (user && user?.name && user?.phone && user?.time) {
@@ -11,7 +11,7 @@ if (user && user?.name && user?.phone && user?.time) {
     formData.append('Ismi', user?.name);
     formData.append('Telefon raqami', user?.phone);
     formData.append(`Ro'yxatdan o'tgan vaqti`, user?.time);
-    fetch('https://script.google.com/macros/s/AKfycbx-c_vkQkcUEnU7-Yzg2azHAtuD7EER4habJuJuVlRk8TgjFdHgcoYkiyDPwv7inmoH/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwRsGiCwVqIbVxP84WuoOJXQMxECorlI3iy_jWgdUttnUTXXucP83gxW6KOC8-S1at7/exec', {
         method: 'POST',
         body: formData
     })

@@ -3,7 +3,7 @@
 let user = JSON.parse(localStorage.getItem('user'));
 
 document.querySelector('#joinToChannel')?.addEventListener('click', () => {
-  window.location.href = 'https://t.me/+9G5Hv4qZ5EdjZTUy';
+  window.location.href = 'https://t.me/+HaJUTul1Bns5ZWFi';
 })
 
 if (user && user?.name && user?.phone && user?.time) {
